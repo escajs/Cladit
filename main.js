@@ -13,4 +13,5 @@ window.addEventListener('scroll',function(){
     
 })
   
+  $('.sidenav').sidenav();
 })
