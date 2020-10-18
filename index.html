@@ -21,7 +21,18 @@
         <nav id="navuri" class="transparent z-depth-0 black-text">
             <div class="container">
                 <a href="#" class="brand-logo"><span class="red-text">Cladit.</span></a>
+                <a href="#" data-target="mobside" class="sidenav-trigger">
+                    <i class="material-icons">menu</i>
+                </a>
                 <ul class="hide-on-med-and-down right">
+                    <div class="mob">
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">SHOP</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </div>
+                </ul>
+                <ul class="sidenav" id="mobside">
                     <li><a href="#">HOME</a></li>
                     <li><a href="#">SHOP</a></li>
                     <li><a href="#">ABOUT</a></li>
@@ -77,12 +88,54 @@
             </div>
         </section>
     </main>
-    <footer>
-        <section>
-            <div class="container">
-                <h1>Empty</h1>
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l3 s12">
+                    <h1 class="foot-logo-name">Cladit<span class="dot">.</span> </h1>
+                </div>
+                <div class="col l3 s12">
+                    <div class="cata">
+                        <ul>
+                            <li>
+                                <h2 class="foot-cat-name">Catalogue</h2>
+                            </li>
+                            <li><a href="#">KAFTANS</a></li>
+                            <li><a href="#">OLD FASHIONS</a></li>
+                            <li><a href="#">NEW COLLECTION</a></li>
+                            <li><a href="#">ACCESSERIES</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col l3 s12">
+                    <div class="cata">
+                        <ul>
+                            <li>
+                                <h2 class="foot-cat-name">Shop</h2>
+                            </li>
+                            <li><a href="#">PAYMENT METHODS</a></li>
+                            <li><a href="#">DELIVERY</a></li>
+                            <li><a href="#">ABOUT</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col l3 s12">
+                    <ul>
+                        <li>
+                            <h2 class="foot-cat-name">Contact</h2>
+                        </li>
+                        <li><a href="#">(+212)6XXXXXXX</a></li>
+                        <li><a href="#">caldit@cantact.com</a></li>
+                    </ul>
+                </div>
             </div>
-        </section>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                &copy; 2020 Made With <3 <a class="grey-text text-lighten-4 right" href="#!">Enjoy!</a>
+            </div>
+        </div>
     </footer>
     <!--ScriptSrart-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
