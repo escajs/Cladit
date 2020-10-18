@@ -8,14 +8,20 @@
     box-sizing: border-box;
 }
 
-::-webkit-scrollbar{
-	width:4px;
-}::-webkit-scrollbar-thumb{
-	background:#5c969e;
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #5c969e;
 }
 
 body {
     overflow-x: hidden;
+     display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+ 
 }
 
 header {
@@ -40,9 +46,10 @@ header {
 
 nav {
     position: fixed;
-     transition: all .5s ease-in;
+    transition: all .5s ease-in;
     z-index: 10;
 }
+
 .sticky {
     background: white !important;
 }
@@ -52,16 +59,14 @@ nav {
 }
 
 
-nav ul li {
-   
-   
-    
-}nav ul li a {
-	 font-family: 'Poppins';
+nav ul li {}
+
+nav ul li a {
+    font-family: 'Poppins';
     font-style: normal;
-   color:#333;
- 	font-size: 1.3rem;
-    
+    color: #333;
+    font-size: 1.3rem;
+
 }
 
 
@@ -186,8 +191,89 @@ item One
     text-shadow: -2px 0px 4px rgba(0, 0, 0, 0.42);
 }
 
-.indicator-item{
-    background:red !important;
-} .indicator-item.active{
-      background:white !important;
+.indicator-item {
+    background: red !important;
+}
+
+.indicator-item.active {
+    background: white !important;
+}
+
+
+/*Footer*/
+footer.page-footer {
+    background: rgba(61, 126, 166, 0.71);
+    min-height: 62vh;
+}
+
+.page-footer .foot-logo-name {
+    font-family: 'Playfair Display', serif;
+}
+
+.page-footer .foot-cat-name {
+    font-family: 'Poppins', serif;
+    font-size: 2.4rem;
+    padding-top: 0.6875rem;
+}
+
+.page-footer ul li>a {
+    color: #fff;
+    font-family: 'Poppins', serif;
+    font-size: 1.5rem;
+}
+
+.page-footer ul li:not(:first-of-type) {
+    padding-top: 2rem;
+}
+
+.page-footer ul li:first-of-type::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 2rem;
+    margin-top:-8px; 
+    background: #FFA5A5;
+}footer  span.dot{
+    color:crimson;
+}
+footer{
+    position: relative;
+}
+footer .footer-copyright{
+    position:absolute;
+    bottom: 0;
+    min-width: 100vw;
+}
+
+@media(max-width:990px ){
+    footer .footer-copyright{
+        position: static;
+    }
+     *{
+        text-align: center;
+     }
+     .page-footer ul li:first-of-type::after {
+    content: '';
+    display: block;
+    height: 2px;
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    width: 2rem;
+    margin-top:-8px; 
+    background: #FFA5A5;
+}
+.landing-fixed-content{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left:10vw;
+}
+.landing-fixed-content:not(.btn-shop .shop-btn){
+    transform: scale(.5);
+}
+}
+
+.sidenav-overlay{
+    z-index: 0;
 }
